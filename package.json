@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-sample",
+  "scripts": {
+    "clean": "rm -rf ./dist/*",
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development",
+    "serve": "node ./dist/main.js"
+  },
+  "version": "1.0.0",
+  "description": "Sample nodejs project",
+  "main": "src/index.js",
+  "repository": "git@github.com:Ahummeling/nodejs-sample.git",
+  "author": "Arend Hummeling <arend@adivare.nl>",
+  "license": "BSD-3",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "session-file-store": "^1.5.0",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
